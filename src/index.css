@@ -1,0 +1,278 @@
+/* General styling */
+
+body {
+    margin: 0;
+    color: white;
+    font-family: Inter, sans-serif;
+    background-color: #1A1B21;
+}
+
+.text-component {
+    background-color: #1A1B21;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+
+.text-component h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.text-component p {
+    font-weight: 200;
+}
+
+/* Info.jsx */
+
+.info-component {
+    position: relative;
+    text-align: center;
+    background-color: #1A1B21;
+    padding-bottom: 1em;
+}
+
+.info-component img {
+    border-radius: 1em;
+    max-width: 430px;
+    cursor: pointer;
+}
+
+.info-component h1 {
+    margin-bottom: 0.15em;
+}
+
+.info-component h2, p {
+    font-weight: 300;
+}
+
+.info-component h2 {
+    margin: 0;
+    color: #d39568;
+    font-size: 1rem;
+}
+
+.info-component p {
+    font-size: 0.75rem;
+}
+
+.info-btn-container {
+    margin-top: 1.5em;
+}
+
+.info-btn-container button {
+    width: 30%;
+    max-width: 160px;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 0.25em;
+    box-shadow: 0 0 3px 2px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.info-email-btn:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.info-linkedin-btn {
+    background-color: #5093E2;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.info-linkedin-btn:hover {
+    background-color: #66a3e9;
+}
+
+.fa-envelope,
+.fa-linkedin {
+    margin-right: 0.5em;
+}
+
+/* Dark mode */
+
+.fa-moon,
+.fa-sun {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-moon {
+    color: #918E9B;
+}
+
+.fa-sun {
+    color: #b2b0ba;
+}
+
+.dark-mode-hide-icon {
+    display: none !important;
+}
+
+.dark-mode-text {
+    color: white;
+}
+
+.dark-mode-background-light {
+    background-color: #1A1B21;
+}
+
+.dark-mode-background-dark {
+    background-color: #161619;
+}
+
+.light-mode-text {
+    color: #2B283A;
+}
+
+.light-mode-background-light {
+    background-color: #F5F5F5;
+}
+
+.light-mode-background-dark {
+    background-color: #D5D4D8 !important;
+}
+
+.light-mode-card-background {
+    background-color: #99CDF3 !important;
+}
+
+/* About.jsx */
+
+.about-component {
+    background-color: inherit;
+    padding-bottom: 1em;
+}
+
+/* Interests.jsx */
+
+.interests-component {
+    background-color: inherit;
+    padding-top: 0;
+    padding-bottom: 2.5em;
+}
+
+.interests-component h3 {
+    margin-top: 0;
+}
+
+/* Footer.jsx */
+
+.footer-component {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.75em;
+    padding: 1em;
+    background-color: #161619;
+}
+
+.footer-component i {
+    font-size: 2rem;
+    color: #918E9B;
+}
+
+.footer-component i:hover {
+    cursor: pointer;
+    color: #b2b0ba;
+}
+
+@media (max-width: 767px) {
+    .fa-moon,
+    .fa-sun {
+        left: 5%;
+        top: 105%
+    }
+}
+
+@media (min-width: 768px) {
+
+    .info-component {
+        padding-top: 8em;
+        padding-bottom: 4em;
+    }
+
+    .info-component img {
+        max-width: 375px;
+        margin-bottom: 2em;
+        box-shadow: 0 0 3px 1px rgb(0, 0, 0, 0.2);
+    }
+
+    .info-component p {
+        margin: 2em 0;
+    }
+
+    .info-btn-container {
+        margin-top: 3em;
+    }
+
+    .info-linkedin-btn {
+        margin-left: 2.5em;
+    }
+
+    .text-component {
+        max-width: 80%;
+    }
+
+    .interests-component {
+        padding: 1.5em 0;
+        margin-bottom: 4em;
+    }
+
+}
+
+@media (max-width: 1079px) {
+
+    .info-component {
+        background-color: inherit !important;
+    }
+
+}
+
+@media (min-width: 1080px) {
+
+    .info-component {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        background-color: #161619;
+        margin: 3em auto;
+        padding-top: 0;
+        padding-bottom: 2em;
+        max-width: 768px;
+        border-radius: 1em;
+        box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.3);
+    }
+
+    .info-component img {
+        margin: 4em 0;
+        max-width: 300px;
+    }
+
+    .info-btn-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .info-container {
+        width: 40%;
+    }
+
+    .info-btn-container button {
+        width: 40%;
+    }
+
+    .info-linkedin-btn {
+        margin: 0;
+    }
+
+    .text-component {
+        max-width: 768px;
+    }
+
+}
